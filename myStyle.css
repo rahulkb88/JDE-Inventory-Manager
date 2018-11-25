@@ -1,0 +1,44 @@
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+
+.mygrid-wrapper-div {
+   height:200px;
+  overflow-y: scroll;
+}
+
+
+.AddBucketItem{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#wrapper {
+  margin: 0px 0px;
+  width: 250px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  max-height: 600px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+td img{     
+  display: block;     
+  margin-left: auto;     
+  margin-right: auto;  
+}
+
+
+.logo{     
+  display: block;     
+  margin-left: auto;     
+  margin-right: auto;  
+}
+ 

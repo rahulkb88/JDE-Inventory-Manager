@@ -1,0 +1,40 @@
+{
+ "manifest_version" : 2,
+  "name": "JDE Overlay for Grids",
+  "version": "1.0.0",
+  "description": "Allow users to manage frequently used items",
+ 
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon/get_started16.png"
+   
+  },
+  
+  "background":{
+  "scripts":["background.js"]
+  },
+  
+  "icons": {
+    "16": "icon/get_started16.png"
+  },
+  
+  "permissions":[
+  "contextMenus",
+  "storage",
+  "notifications",
+  "tabs",
+  "http://*/*",
+  "https://*/*"
+  ],
+  
+  "options_page" : "options.html",
+  
+  "content_scripts":[
+  {
+  "matches":["http://*/*","https://*/*"],
+  "js":["content.js", "jquery-3.1.1.min"]
+  }
+  ]
+  
+ 
+ }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>JDE Overlay for Grids</title>
+    <script src="jquery-3.1.1.min.js"> </script>
+    <script src="options.js"> </script> 
+    <script src="bootstrap.min.js"> </script> 
+    <script src="popper.js"> </script> 
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
+
+  <body>
+      <!-- Content here -->
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="navbar-brand">
+        <a class="navbar-brand" href="#">
+          <img src="icon/JDE_Ext64.jpg" width="30" height="30" alt="">
+        </a>
+        <span class="navbar-brand mb-0 h1">JDE Overlay</span>
+        </div>
+      </nav>
+
+    <div class="masthead-followup row m-0 border border-white">
+      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+        <img src="icon/trolley.png" width="32" height="32">
+        <img id = "deleteAllItems" src="icon/cancel.png" width="32" height="32" style="float:right">
+        <img id = "addItem" src="icon/plus.png" width="32" height="32" style="float:right">
+        <!--<input type="button" width="32" height="32" alt="" id="addItem" style="background: url(icon/plus32.png);float:right;"/>-->
+        <h3>Item Management</h3>
+		<div class="Optionsgrid-wrapper-div">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item Name</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody1">
+          </tbody>
+        </table>
+		</div>
+      </div>
+
+      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+        <img src="icon/bucket.png" width="32" height="32">
+        <img src="icon/cancel.png" id = "deleteAllBuckets" width="32" height="32" style="float:right">
+        <img src="icon/plus.png" id="addBucket"  width="32" height="32" style="float:right">
+        <h3>Bucket Management</h3>
+		<div class="Optionsgrid-wrapper-div">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Bucket Name</th>
+              <th scope="col">Add Items</th>
+              <th scope="col">Delete</th>              
+            </tr>
+          </thead>
+          <tbody id="tbody2">
+          </tbody>
+        </table>
+      </div>
+	  </div>
+    </div>
+
+    <!-- Modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      Launch demo modal
+    </button>
+  -->
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="ModalBodyId">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ends-->
+  </body>
+
+</html>
